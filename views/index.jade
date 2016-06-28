@@ -1,0 +1,484 @@
+extends layout
+
+block content
+
+    header#intro-carousel.carousel.slide
+        // Wrapper for slides
+        .carousel-inner
+            .item.html5-video-container.active
+                // HTML5 Video
+                video#html5-video.fill(muted='', autoplay='', loop='', poster='./img/typing-on-mac.jpg')
+                    source(src='./videos/typing-on-mac.webm', type='video/webm')
+                    source(src='./videos/typing-on-mac.mp4', type='video/mp4')
+            .carousel-caption
+                h1.animated.slideInDown Welcome
+                p.intro-text.animated.slideInUp
+                  | Experience HTML5 videos displayed in the background, giving the user the control to mute / play / pause the video!
+                a.btn.btn-default.btn-lg(href='#') Download theme
+            .html5-video-controls
+                a#html5-video-volume.fa.fa-volume-up.fa-lg(href='#')
+                a#html5-video-play.fa.fa-pause.fa-lg(href='#')
+            .overlay-detail
+        .mouse
+    // About Section
+    section#about.about.content-section.alt-bg-light
+        .container
+            .row
+                .col-md-6
+                    h2 Happy & excited
+                    h3.caption.gray Customers in 100+ countries use our services
+                    p
+                      | A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of existence.
+                    blockquote
+                      | There are two types of people who will tell you that you cannot make a difference in this world: those who are afraid to try and those who are afraid you will succeed.
+                      span Ray Goforth
+                    h3.gray.light
+                      | Over the past 11 years we've worked with some amazing small businesses, non-profits, academic institutions and even Fortune 100 companies.
+                .col-md-6
+                    // Display image
+                    // <img src="img/hallooou_template-iphone_sm.png" class="img-responsive">
+                    // Optional video embed code
+                    .embed-responsive.embed-responsive-16by9
+                        iframe.embed-responsive-item(src='https://player.vimeo.com/video/132613118?title=0&byline=0&portrait=1', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+    section#services.services.content-section
+        .container
+            .row.text-center
+                .col-md-12
+                    h2 What we do
+                    h3.caption.gray Eleifend mi iaculis parturient etiam volutpat pulvinar eleifend
+                  // /.col-md-12
+                .container
+                    .row.text-center
+                    .col-md-4
+                        .row.services-item.sans-shadow.text-center
+                            i.fa.fa-cogs.fa-3x
+                            h4 Development
+                            p We build Wordpress and custom plugins and back-end solutions.
+                        // /.row
+                      // /.col-md-4
+                    .col-md-4
+                        .row.services-item.sans-shadow.text-center
+                            i.fa.fa-paint-brush.fa-3x
+                            h4 UI/UX
+                            p We love creating beautiful and functional designs for our clients
+                        // /.row
+                      // /.col-md-4
+                    .col-md-4
+                        .row.services-item.sans-shadow.text-center
+                            i.fa.fa-bullhorn.fa-3x
+                            h4 Social Marketing
+                            p Discover social marketing and take your business to new heights
+                        // /.row
+                      // /.col-md-4
+                    .col-md-4
+                        .row.services-item.sans-shadow.text-center
+                            i.fa.fa-database.fa-3x
+                            h4 System Design
+                            p Every website needs the right environment if it plans to be successful
+                        // /.row
+                      // /.col-md-4
+                    .col-md-4
+                        .row.services-item.sans-shadow.text-center
+                            i.fa.fa-align-left.fa-3x
+                            h4 Copywriting
+                            p What you say and how you say it is as important as everything else
+                        // /.row
+                      // /.col-md-4
+                    .col-md-4
+                        .row.services-item.sans-shadow.text-center
+                            i.fa.fa-camera.fa-3x
+                            h4 Photography
+                            p Specializing in product and photo journalistic style photography
+    section#products.products.content-section
+        .container
+            .row
+                .col-md-4
+                    img.center-block.img-responsive(src='img/hallooou_template-iphone_white.png')
+                  // /.col-md-4
+                .col-md-8
+                    .products-container
+                        .col-md-12
+                            h2 Why is it awesome?
+                            h3.caption.white Ultricestum urna litora sit sed praesent condimentum eu a et scelerisque
+                            // /.col-md-12
+                            .col-md-6.product-item
+                                .media-left
+                                    span.icon
+                                        i.fa.fa-arrows-alt.fa-3x
+                                // /.media-left
+                                .media-body
+                                  h3.media-heading Responsive Layout
+                                  p Powerful Layout with Responsive functionality that can be adapted to any screen size.
+                            .col-md-6.product-item
+                                .media-left
+                                    span.icon
+                                        i.fa.fa-eye.fa-3x
+                                // /.media-left
+                                .media-body
+                                    h3.media-heading Retina Ready Graphics
+                                    p Looks beautiful & ultra-sharp on Retina Displays with Retina Icons, Fonts & Images.
+                            .col-md-6.product-item
+                                .media-left
+                                    span.icon
+                                        i.fa.fa-arrows-v.fa-3x
+                                // /.media-left
+                                .media-body
+                                    h3.media-heading Parallax Sections
+                                    p Comes with Parallax effect script so you can add Parallax effect to any section of the website.
+                            .col-md-6.product-item
+                                .media-left
+                                    span.icon
+                                        i.fa.fa-video-camera.fa-3x
+                                // /.media-left
+                                .media-body
+                                    h3.media-heading YouTube & HTML5 Background Video
+                                    p Choose to display either YouTube or HTML5 as background video.
+                            .col-md-6.product-item
+                                .media-left
+                                    span.icon
+                                        i.fa.fa-toggle-on.fa-3x
+                                // /.media-left
+                                .media-body
+                                    h3.media-heading Color Options
+                                    p Choose a color that suits your brand & change the color of the template with just one CSS file.
+                            .col-md-6.product-item
+                                .media-left
+                                    span.icon
+                                        i.fa.fa-envelope-o.fa-3x
+                                // /.media-left
+                                .media-body
+                                    h3.media-heading Contact form
+                                    p Fully functional PHP contact form, with user input validation.
+    section#team.team.content-section
+        .container
+            .row.text-center
+                .col-md-12
+                    h2 Our Team
+                    h3.caption.gray Meet the people who make awesome stuffs
+                .container
+                    .row
+                        .col-md-4
+                            .team-member
+                                figure
+                                    img.img-responsive(src='img/lauren-cox.jpg', alt='')
+                                    figcaption
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.
+                                        ul
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-facebook.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-twitter.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-linkedin.fa-2x
+                                h4 Lauren Cox
+                                p Creative Director
+                        .col-md-4
+                            .team-member
+                                figure
+                                    img.img-responsive(src='img/jessie-barnett.jpg', alt='')
+                                    figcaption
+                                        p Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo eligendi.
+                                        ul
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-facebook.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-twitter.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-linkedin.fa-2x
+                                h4 Jessie Barnett
+                                p UI/UX Designer
+                        .col-md-4
+                            .team-member
+                                figure
+                                    img.img-responsive(src='img/terry-fletcher.jpg', alt='')
+                                    figcaption
+                                        p Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.
+                                        ul
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-facebook.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-twitter.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-linkedin.fa-2x
+                                h4 Terry Fletcher
+                                p Web Developer
+                        .col-md-4
+                            .team-member
+                                figure
+                                    img.img-responsive(src='img/lauren-cox.jpg', alt='')
+                                    figcaption
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae asperiores mollitia.
+                                        ul
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-facebook.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-twitter.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-linkedin.fa-2x
+                                h4 Lauren Cox
+                                p Creative Director
+                        .col-md-4
+                            .team-member
+                                figure
+                                    img.img-responsive(src='img/jessie-barnett.jpg', alt='')
+                                    figcaption
+                                        p Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo eligendi.
+                                        ul
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-facebook.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-twitter.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-linkedin.fa-2x
+                                h4 Jessie Barnett
+                                p UI/UX Designer
+                        .col-md-4
+                            .team-member
+                                figure
+                                    img.img-responsive(src='img/terry-fletcher.jpg', alt='')
+                                    figcaption
+                                        p Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae alias omnis totam.
+                                        ul
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-facebook.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-twitter.fa-2x
+                                            li
+                                                a(href='')
+                                                    i.fa.fa-linkedin.fa-2x
+                                h4 Terry Fletcher
+                                p Web Developer
+
+    section#portfolio.portfolio.content-section.parallax
+        .container
+            .row.text-center
+                .col-md-12
+                    h2 Some of our recent work
+                    h3.caption.white Designed with passion and coded to perfection, Hallooou is a stylish responsive HTML template, that is packed with tons of features yet is so easy to use.
+        .container.project-container.text-center
+            .recent-project-carousel.owl-carousel.owl-theme.popup-gallery
+                .item.recent-project
+                    img(src='img/gallery/project-one.jpg', alt='')
+                    .project-info
+                        h3 Lakeview Inc.
+                        ul.project-meta
+                            li
+                                a(href='#') Website Design
+                    .full-project
+                        a(href='img/gallery/project-one_xl.jpg', title='Lakeview Inc. | Website Design') View project 
+                            i.fa.fa-chevron-right
+
+                .item.recent-project
+                    img(src='img/gallery/project-two.jpg', alt='')
+                    .project-info
+                        h3 Adam Productions
+                        ul.project-meta
+                            li
+                                a(href='#') App Design
+                    .full-project
+                        a(href='img/gallery/project-two_xl.jpg', title='Adam Productions | App Design') View project 
+                            i.fa.fa-chevron-right
+                .item.recent-project
+                    img(src='img/gallery/project-three.jpg', alt='')
+                    .project-info
+                        h3 Doe Associates
+                        ul.project-meta
+                            li
+                                a(href='#') Branding
+                    .full-project
+                        a(href='img/gallery/project-three_xl.jpg', title='Doe Associates | Branding') View project 
+                            i.fa.fa-chevron-right
+                .item.recent-project
+                    img(src='img/gallery/project-four.jpg', alt='')
+                    .project-info
+                        h3 Omega Corporation
+                        ul.project-meta
+                            li
+                                a(href='#') App Design
+                    .full-project
+                        a(href='img/gallery/project-four_xl.jpg', title='Omega Corporation | App Design') View project 
+                            i.fa.fa-chevron-right
+            .customNavigation.project-navigation.text-center
+                a.btn-prev
+                    i.fa.fa-angle-left.fa-2x
+                a.btn-next
+                    i.fa.fa-angle-right.fa-2x
+    section#clients.our-clients.content-section.text-center
+        .container
+            .row
+                .col-md-12
+                    h2 Our clients
+                    h3.caption.white Decent listing with your clients. Fully customizable and ready to use in any subpages as you want. Responsive for any numbers of clients in this section.
+            .row.client-slider
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/sony-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/nike-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/paramount-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/microsoft-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/citibank-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/fedex-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/sony-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/nike-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/paramount-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/microsoft-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/citibank-logo.png')
+                .item.col-xs-4.col-md-2.i
+                    a(href='#', title='#')
+                        img.img-responsive(src='img/fedex-logo.png')
+    section.testimonials.content-section
+        .container
+            .row.text-center
+                .col-md-12
+                    h2 Rated 4.8 out of 5
+                    h3.caption.gray Here's what our clients have to say
+                .container
+                    .row
+                        .col-md-8.col-md-offset-2
+                            .client-testimonials.owl-carousel.owl-theme
+                                .item
+                                    p.speech The best HTML5 template we have EVER purchased. It's the perfect solution for our business. The unlimited customization helps us get things done quickly and efficiently.
+                                    .client-info
+                                        img(src='img/gina_stone-client_pic.jpg')
+                                        h4 Gina Stone
+                                        span Adam Productions
+                                .item
+                                    p.speech This is the real deal! Very easy to use. Thanks to HTML5 template, we've just launched our new website! I couldn't have asked for more than this. Definitely worth the investment.
+                                    .client-info
+                                        img(src='img/john_doe-client_pic.jpg')
+                                        h4 John Doe
+                                        span Doe Associates
+                                .item
+                                    p.speech We're loving it. The best on the net! I strongly recommend  HTML5 template to everyone interested in running a successful business! HTML5 template has really helped our business.
+                                    .client-info
+                                        img(src='img/dana_hill-client_pic.jpg')
+                                        h4 Dana Hill
+                                        span Lakeview Inc.
+    section.cta-one-section.content-section.alt-bg-light
+        .container
+            .row.text-center
+                .col-md-6
+                    h2 A creative HTML5 template
+                    h3.caption.gray Optional title for call to action
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quis quam, culpa deserunt hic et numquam eius accusamus expedita quidem sit voluptate!
+                    a.btn.btn-default.btn-lg(href='#') Questions?
+                    a.btn.btn-outlined.btn-lg(href='#') Contact us
+                .col-md-6
+                    img.img-responsive(src='img/hallooou-responsive.png')
+    section#counter.counter-section.content-section
+        .container
+            .row.text-center
+                .col-md-12
+                    h2.white Our Achievements
+                    h3.caption Ultricestum urna litora sit sed praesent condimentum eu a et scelerisque
+                .col-sm-3.counter-wrap
+                    strong
+                        span.timer 350
+                        | +
+                    span.count-description Clients Worked With
+                .col-sm-3.counter-wrap
+                    strong
+                        span.timer 250
+                        | +
+                    span.count-description Nominations
+                .col-sm-3.counter-wrap
+                    strong
+                        span.timer 160
+                        | +
+                    span.count-description Awards Won
+                .col-sm-3.counter-wrap
+                    strong
+                        span.timer 1650
+                        | +
+                    span.count-description Cups Of Coffee
+    section.cta-two-section
+        .container
+            .row
+                .col-sm-9
+                    h3 Have an idea?
+                    p We’re here to help you manage your work
+                .col-sm-3
+                    a.btn.btn-overcolor(href='#') Get in touch
+    section#contact.contact.content-section.no-bottom-pad
+        .container
+            .row.text-center
+                .col-md-12
+                    h2 Contact
+                    h3.caption.gray Feel free to get in touch with us if you have a new project or simply something awesome
+        .container
+            .row.form-container
+                .col-md-8.contact-form
+                    h3 Drop us a line
+                    form#contactForm.ajax-form(method='post', action='assets/php/contact.php')
+                        .form-group
+                            input#name.form-control(type='text', name='name', placeholder='Your Name...', value='', required='')
+                        .form-group
+                            input#email.form-control(type='email', name='email', placeholder='Your email...', value='', required='')
+                        .form-group
+                            input#phone.form-control(type='phone', name='phone', placeholder='Your phone...', value='', required='')
+                        .form-group
+                            textarea.form-control(rows='4', name='message', placeholder='Your message...', required='')
+                        .form-group
+                            button.btn.btn-default(type='submit', name='submit')
+                                i.fa.fa-paper-plane.fa-fw
+                                |  Send
+                .col-md-4.contact-address
+                    h3 Our address
+                    p 76 Ninth Ave,
+                        br
+                        | New York, NY 10011,
+                        br
+                        |  United States
+                    ul
+                        li
+                            span Email:
+                            | info@yourcompany.com
+                        li
+                            span Phone:
+                            | +88 (0) 101 0000 000
+                        li
+                            span Fax:
+                            | +88 (0) 202 0000 001
+        .container-fluid.buffer-forty-top
+            .row
+                section(id='cd-google-map no-bottom-pad')
+                    div#google-container
+                    div#cd-zoom-in
+                    div#cd-zoom-out
